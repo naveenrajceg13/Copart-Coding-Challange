@@ -25,7 +25,7 @@ public class ZipCodeApi {
 	public double getDistance(String zip1,String zip2)
 	{
 		String API_Key="SH8Be5Im18StbtqknXgm9a9aoJZsukum2CXhHGDJOvd0ZDknBAJKLSV9CVC6g6si";
-		String url="https://www.zipcodeapi.com/rest/"+API_Key+"/distance.json/"+zip1+"/"+zip2+"/miles";
+		String url="https://www.zipcodeapi.com/rest/"+API_Key+"/distance.json/"+zip1+"/"+zip2+"/km";
 		String inputLine;
 		try {
 			URL ur= new URL(url);

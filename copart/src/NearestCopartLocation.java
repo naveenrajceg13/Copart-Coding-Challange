@@ -60,14 +60,16 @@ public class NearestCopartLocation {
 		NearestCopartLocation nearCopart=new NearestCopartLocation();
 		nearCopart.addressMap=nearCopart.getLocationInputandPutinMap(new File("copartLocations.csv"));
 		nearCopart.customerMap=nearCopart.getCustomerLocationMap(new File("CopartCustomerLocation.csv"));
+		System.out.println("Enter Customer ID and Zip code");
 		while(s.hasNext())
 		{
-		System.out.println("Enter Customer Zip and Zip code");
 		customerID=s.nextLine();
 		zipCode=s.nextLine();
 		if(customerID.length()>1 && zipCode.length()>1)
 		     System.out.println(nearCopart.getNearestLocation(customerID, zipCode));
+		System.out.println("Enter Customer ID and Zip code");
 		}
+		
 	}
 
 	public CopartLocation getNearestLocation(String customerID,String zipCode)

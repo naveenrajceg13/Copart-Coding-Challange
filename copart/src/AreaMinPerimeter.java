@@ -14,9 +14,14 @@ public class AreaMinPerimeter {
 	{
 		AreaMinPerimeter areaMin=new AreaMinPerimeter();
 		int value;
-		Scanner s=new Scanner(System.in);
+		int total;
+		Scanner s=new Scanner(System.in);		
+		total=s.nextInt();
+		for(int i=0;i<total;i++)
+		{
 		value=s.nextInt();
-		System.out.println(areaMin.minimumPerimeter(value));  // call to helper function 
+		System.out.println((int)Math.ceil(areaMin.minimumPerimeter(value)));  // call to helper function 
+		}
 	}
 
 	/*
